@@ -8,14 +8,14 @@ public class Homework {
 
         System.out.println("main starts ");
 
-        ThreadInterface threadInterface= new ThreadInterface("ThreadInterface");
+        ThreadInterface threadInterface= new ThreadInterface('*');
         Thread thread= new Thread(threadInterface);
         thread.start();
         thread.join();
 
         System.out.println();
 
-        ThreadClass threadClass= new ThreadClass("ThreadClass");
+        Thread threadClass= new ThreadClass('#');
         threadClass.start();
         threadClass.join();
 
